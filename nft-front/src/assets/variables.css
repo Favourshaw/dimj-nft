@@ -1,0 +1,15 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --background: white;
+  --white: white;
+  --dark: #555;
+  --text-grad-bg: rgb(2, 0, 36);
+  --text-grad-1: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(30, 9, 121, 1) 35%,
+    rgba(117, 0, 255, 1) 100%
+  );
+
+  --btn-bg: #2f80ed;
+}
