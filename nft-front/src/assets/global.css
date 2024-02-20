@@ -5,12 +5,13 @@
   border-radius: 60px;
   width: max-content;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .btn-light {
   background: var(--white);
   color: var(--dark);
-  border: 2px solid var(--dark);
+  border: 2px solid var(--text-grad-bg);
 }
 
 .btn-dark {

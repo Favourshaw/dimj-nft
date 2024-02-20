@@ -11,5 +11,14 @@
     rgba(117, 0, 255, 1) 100%
   );
 
+  --text-grad-bg2: rgb(213, 204, 215);
+  --text-grad-2: linear-gradient(
+    122deg,
+    rgba(213, 204, 215, 1) 0%,
+    rgba(159, 103, 168, 1) 70%,
+    rgba(173, 0, 255, 1) 100%
+  );
+
   --btn-bg: #2f80ed;
+  --bg-blob: rgba(143, 0, 255, 0.35);
 }

@@ -28,3 +28,88 @@
   margin-top: 36px;
   gap: 36px;
 }
+
+.hero-left-info {
+  display: flex;
+  padding: 48px 0 0;
+  gap: 24px;
+}
+
+.hf-info-item {
+  flex-direction: column;
+}
+
+.hfi-count {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.hfi-label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hero-right {
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+
+.hero-right-diamond {
+  display: flex;
+  flex-wrap: wrap;
+  transform: rotate(45deg);
+}
+
+.diamond-item {
+  height: 280px;
+  width: 280px;
+  overflow: hidden;
+  margin: 6px;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  border: 3px solid var(--dark);
+  border-radius: 12px;
+}
+
+.hr-image {
+  height: 400px;
+  object-fit: contain;
+  display: block;
+}
+
+.hero-right-blob {
+  height: 550px;
+  width: 550px;
+  background: var(--bg-blob);
+  filter: blur(160.58px);
+  position: absolute;
+  z-index: -99;
+  left: 20%;
+  top: 10%;
+  transform: translate(-50%);
+}
+
+/*top art*/
+
+.top-art {
+  padding: 108px 0;
+  position: relative;
+}
+.section-title {
+  font-size: 46px;
+  font-weight: 700;
+  padding: 24px;
+  margin-bottom: 36px;
+}
+
+.top-art-blob {
+  height: 550px;
+  width: 550px;
+  background: var(--bg-blob);
+  filter: blur(160.58px);
+  position: absolute;
+  z-index: -99;
+  left: 50%;
+  transform: translate(-50%);
+}

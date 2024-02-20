@@ -1,0 +1,74 @@
+.ta-card {
+  flex-direction: column;
+}
+
+.top-art-blob {
+  height: 550px;
+  width: 550px;
+  background: var(--bg-blob);
+  filter: blur(160.58px);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.ta-wrapper {
+  background: var(--text-grad-1);
+  padding: 2px;
+  border-radius: 18px;
+}
+
+.ta-content {
+  background-color: var(--white);
+  padding: 18px;
+  border-radius: 18px;
+}
+
+.ta-banner {
+  height: 300px;
+  border-radius: 18px;
+  width: 300px;
+}
+
+.ta-user-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  margin: 16px 0;
+  gap: 15px;
+}
+
+.ta-ui-price-logo {
+  height: 30px;
+  margin-right: 12px;
+}
+
+.ta-user-info-left {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.ta-ui-price {
+  font-size: 18px;
+  font-weight: 600;
+}
+.ta-ui-uname {
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+.ta-ui-handle {
+  font-size: 22px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.ta-btn {
+  margin-top: 36px;
+}
+
+.ta-btn > div {
+  font-size: 14px;
+}
