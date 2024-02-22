@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick/lib/slider";
-import { TopArtData } from "../../utils/topArts";
-import TopArtCard from "../cards/TopArtCard";
+import { GamingData } from "../../utils/gaming";
+import GamingCard from "../cards/GamingCard";
 import { Link } from "react-router-dom";
 
 const settings = {
@@ -46,7 +46,7 @@ const settings = {
   ],
 };
 
-const TopArt = () => {
+const Gaming = () => {
   return (
     <div className="top-art">
       <div className="section-heading">
@@ -62,12 +62,12 @@ const TopArt = () => {
       <div className="top-art-blob"></div>
 
       <Slider {...settings}>
-        {TopArtData.map((_topArt) => (
-          <TopArtCard topArt={_topArt} />
+        {GamingData.map((_gaming) => (
+          <GamingCard gaming={_gaming} />
         ))}
       </Slider>
     </div>
   );
 };
 
-export default TopArt;
+export default Gaming;

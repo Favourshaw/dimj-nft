@@ -1,8 +1,14 @@
 /*hero */
 
 .hero {
-  height: 92vh;
   overflow: hidden;
+}
+
+.hero-bg {
+  background-image: url("https://media1.tenor.com/m/1i16nMrNj88AAAAC/nft-marketing-nft-gorillas.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .hero-left {
@@ -62,8 +68,8 @@
 }
 
 .diamond-item {
-  height: 280px;
-  width: 280px;
+  height: 250px;
+  width: 250px;
   overflow: hidden;
   margin: 6px;
   transform: rotate(-45deg);
@@ -73,7 +79,7 @@
 }
 
 .hr-image {
-  height: 400px;
+  height: 300px;
   object-fit: contain;
   display: block;
 }
@@ -90,6 +96,24 @@
   transform: translate(-50%);
 }
 
+@media screen and (max-width: 1024px) {
+  .hero {
+    height: 100vh;
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  .diamond-item {
+    height: 170px;
+    width: 170px;
+    margin: 6px;
+    border-radius: 12px;
+    margin-top: 45px;
+  }
+  .hr-image {
+    height: 100%;
+    width: 100%;
+  }
+}
 /*top art*/
 
 .top-art {
@@ -103,13 +127,18 @@
   margin-bottom: 36px;
 }
 
-.top-art-blob {
-  height: 550px;
-  width: 550px;
-  background: var(--bg-blob);
-  filter: blur(160.58px);
-  position: absolute;
-  z-index: -99;
-  left: 50%;
-  transform: translate(-50%);
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .section-title {
+    font-size: 26px;
+    font-weight: 700;
+    padding: 14px;
+    margin-bottom: 36px;
+  }
 }

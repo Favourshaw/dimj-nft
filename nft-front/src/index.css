@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: unset;
+}
+
 .center-div {
   display: flex;
   justify-content: center;
@@ -5,10 +12,27 @@
 }
 
 .max-width {
-  width: 80%;
-  margin: auto;
+  padding-left: 116px;
+  padding-right: 116px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cu-po {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .max-width {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .max-width {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }

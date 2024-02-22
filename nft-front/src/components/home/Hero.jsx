@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="hero center-div">
-      <div className="hero-left">
+      <div className="hero-left hero-b">
         <div className="hero-left-heading">
           Discover, sell and collect
           <span className="t-grad-dark"> Extraordinary </span> NFT
