@@ -12,28 +12,3 @@
   align-items: center;
   gap: 15px;
 }
-
-/*hero */
-
-.hero {
-  height: 92vh;
-  overflow: hidden;
-}
-
-.hero-left {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding-right: 48px;
-}
-
-.hero-heading {
-  font-size: 74px;
-  font-weight: 600;
-  line-height: 72px;
-}
-
-.hero-desc {
-  font-size: 20px;
-  margin: 24px 0;
-}

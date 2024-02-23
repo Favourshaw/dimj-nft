@@ -2,11 +2,70 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./details.css";
 import "../../assets/btn.css";
+import DetailsCard from "../cards/DetailsCard";
+
+import Slider from "react-slick/lib/slider";
+import { TopArtData } from "../../utils/topArts";
+
+const settings = {
+  className: "center",
+  centerMode: true,
+  infinite: true,
+  centerPadding: "60px",
+  speed: 8000,
+  slidesToShow: 4,
+  slidesToScroll: 3,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  cssEase: "linear",
+  arrows: false,
+  dots: false,
+  initialSlide: 0,
+  pauseOnHover: true,
+  responsive: [
+    {
+      breakpoint: 1220,
+      settings: {
+        centerMode: false,
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        infinite: true,
+      },
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        centerMode: true,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        infinite: true,
+      },
+    },
+    {
+      breakpoint: 750,
+      settings: {
+        infinite: true,
+        centerMode: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
 
 const ItemDetails = () => {
   return (
     <div className="details max-width">
-      <a class="btn-arrow learn-more">
+      <a class="btn-arrow btn-a-body">
         <span class="circle" aria-hidden="true">
           <span class="icon arrow"></span>
         </span>
@@ -52,6 +111,18 @@ const ItemDetails = () => {
               </Link>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="details-cards ">
+        <div className="details-c-title">
+          <span className="t-grad-dark">Name</span>
+        </div>
+        <div className="max-width">
+          <Slider {...settings}>
+            {TopArtData.map((_dets) => (
+              <DetailsCard dets={_dets} />
+            ))}
+          </Slider>
         </div>
       </div>
     </div>

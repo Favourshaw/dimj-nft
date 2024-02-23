@@ -24,14 +24,15 @@
   --bg-blob: rgba(143, 0, 255, 0.35);
 
   --spacing: 2rem;
-  --body-font: 24px;
-  --head-font: 56px;
+  --body-font: 20px;
+  --head-font: 46px;
+  --grey: rgba(145, 145, 143, 0.1);
 }
 
 @media screen and (max-width: 1020px) {
   :root {
     --spacing: 1.6rem;
-    --body-font: 18px;
+    --body-font: 16px;
     --head-font: 36px;
   }
 }
@@ -39,7 +40,7 @@
 @media screen and (max-width: 750px) {
   :root {
     --spacing: 1rem;
-    --body-font: 15px;
+    --body-font: 14px;
     --head-font: 28px;
   }
 }
