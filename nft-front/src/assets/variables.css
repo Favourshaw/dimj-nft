@@ -26,6 +26,8 @@
   --spacing: 2rem;
   --body-font: 20px;
   --head-font: 46px;
+  --mid-font: 25px;
+  --small-font: 18px;
   --grey: rgba(145, 145, 143, 0.1);
 }
 
@@ -34,6 +36,8 @@
     --spacing: 1.6rem;
     --body-font: 16px;
     --head-font: 36px;
+    --mid-font: 22px;
+    --small-font: 14px;
   }
 }
 
@@ -42,5 +46,7 @@
     --spacing: 1rem;
     --body-font: 14px;
     --head-font: 28px;
+    --mid-font: 16px;
+    --small-font: 12px;
   }
 }

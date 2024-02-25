@@ -48,14 +48,19 @@ const settings = {
 
 const TopArt = () => {
   return (
-    <div className="top-art">
+    <div className="top-art max-width">
       <div className="section-heading">
         <div className="section-title">
           <span className="t-grad-dark">Top Artist</span>
         </div>
-        <div className="ta-btn  ">
-          <Link className="btn btn-sm-light" to="/art">
-            View All
+        <div>
+          <Link class="btn-arrow-fwd btn-a-body">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text hide-large">View All</span>
+
+            <span class="button-text hide-small">See Entire Category</span>
           </Link>
         </div>
       </div>

@@ -7,8 +7,9 @@ const DetailsCard = (props) => {
     <div className="ta-card center-div">
       <div className="ta-wrapper">
         <div className="ta-content">
-          <img src={dets.banner} alt={dets.user_name} className="ta-banner" />
-
+          <div className="ta-banner-cover">
+            <img src={dets.banner} alt={dets.user_name} className="ta-banner" />
+          </div>
           <div className="ta-user-info">
             <div className="ta-user-info-top">
               <div className="ta-ui-handle">{dets.handle}</div>

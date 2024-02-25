@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="hero center-div">
+    <div className="hero center-div max-width">
       <div className="hero-left hero-b">
         <div className="hero-left-heading">
           Discover, sell and collect
@@ -14,31 +15,21 @@ const Hero = () => {
         </div>
 
         <div className="hero-left-btn">
-          <div className="btn btn-dark">explore</div>
-          <div className="btn btn-light">create</div>
-        </div>
-
-        <div className="hero-left-info">
-          <div className="hf-info-item center-div">
-            <div className="hfi-count">200k+</div>
-            <div className="hfi-label">Collections</div>
+          <div>
+            <Link class="btn-wave">
+              <span class="wave-text">Explore</span>
+              <div class="wave"></div>
+            </Link>
           </div>
-
-          <div className="hf-info-item center-div">
-            <div className="hfi-count">200k+</div>
-            <div className="hfi-label">Collections</div>
-          </div>
-
-          <div className="hf-info-item center-div">
-            <div className="hfi-count">410k+</div>
-            <div className="hfi-label">Community</div>
+          <div>
+            <Link class="btn btn-light">Buy NF</Link>
           </div>
         </div>
       </div>
       <div className="hero-right">
         <div className="hero-right-blob"></div>
         <div className="hero-right-diamond">
-          <div className="diamond-item center-div">
+          <div className="diamond-item center-div item1">
             <img
               className="hr-image"
               src="https://media1.tenor.com/m/uHVmd0uBuU0AAAAC/bored-ape-yacht-club-nft.gif"
@@ -46,7 +37,7 @@ const Hero = () => {
             />
           </div>
 
-          <div className="diamond-item center-div">
+          <div className="diamond-item center-div item2">
             <img
               className="hr-image"
               src="https://media1.tenor.com/m/l6JPiRvpcbUAAAAC/grandpa-apes-grandpaape.gif"
@@ -54,7 +45,7 @@ const Hero = () => {
             />
           </div>
 
-          <div className="diamond-item center-div">
+          <div className="diamond-item center-div item3">
             <img
               className="hr-image"
               src="https://media1.tenor.com/m/247dOM9MXMEAAAAd/bayc-myth-division.gif"
@@ -62,7 +53,7 @@ const Hero = () => {
             />
           </div>
 
-          <div className="diamond-item center-div">
+          <div className="diamond-item center-div item4">
             <img
               className="hr-image"
               src="https://media1.tenor.com/m/1i16nMrNj88AAAAC/nft-marketing-nft-gorillas.gif"

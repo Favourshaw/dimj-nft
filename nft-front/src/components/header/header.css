@@ -3,6 +3,35 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: white;
+}
+
+.h-dark {
+  background: #0581b3;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+}
+
+.btn-head {
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 1rem;
+  background: var(--white);
+  color: var(--dark);
+  border: 1px solid #ccc;
+
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-right {

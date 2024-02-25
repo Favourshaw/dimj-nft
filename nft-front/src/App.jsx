@@ -4,6 +4,8 @@ import Home from "./components/home/Home";
 import HLayout from "./components/layout/Layout";
 import Category from "./components/pages/Category";
 import ItemDetails from "./components/pages/ItemDetails";
+import Dashboard from "./auth/Dashboard";
+import ALayout from "./components/layout/AuthLayout";
 
 function App() {
   return (
@@ -14,6 +16,10 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/category" element={<Category />} />
             <Route path="/details" element={<ItemDetails />} />
+          </Route>
+
+          <Route element={<ALayout />}>
+            <Route path="/dashboard" element={<Dashboard />} />
           </Route>
         </Routes>
       </div>

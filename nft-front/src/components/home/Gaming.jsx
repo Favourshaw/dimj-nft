@@ -48,7 +48,7 @@ const settings = {
 
 const Gaming = () => {
   return (
-    <div className="top-art">
+    <div className="top-art max-width">
       <div className="section-heading">
         <div className="section-title">
           <span className="t-grad-dark">Top Artist</span>

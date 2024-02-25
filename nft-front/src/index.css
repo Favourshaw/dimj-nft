@@ -3,6 +3,7 @@
 }
 body {
   margin: unset;
+  color: rgb(51, 51, 51);
 }
 
 .center-div {
@@ -22,11 +23,22 @@ body {
   cursor: pointer;
 }
 
+.hide-large {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
   .max-width {
     padding-left: 30px;
     padding-right: 30px;
     margin-left: auto;
+  }
+
+  .hide-large {
+    display: revert;
+  }
+  .hide-small {
+    display: none;
   }
 }
 

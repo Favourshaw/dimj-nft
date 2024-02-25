@@ -3,21 +3,22 @@
   cursor: pointer;
   text-transform: uppercase;
   text-decoration: none;
+  width: 100%;
+  display: block;
+  text-align: center;
 }
 
 .btn-light {
-  padding: 16px 55px;
-  font-size: 24px;
+  padding: 20px 20px;
   font-weight: 600;
-  border-radius: 60px;
+  border-radius: 1rem;
   background: var(--white);
   color: var(--dark);
-  border: 2px solid var(--text-grad-bg);
+  border: 1px solid #ccc;
 }
 
 .btn-dark {
   padding: 16px 55px;
-  font-size: 24px;
   font-weight: 600;
   border-radius: 60px;
   background: var(--btn-bg);

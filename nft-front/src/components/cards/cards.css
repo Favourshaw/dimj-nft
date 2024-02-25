@@ -26,13 +26,14 @@
 .ta-content {
   background-color: var(--white);
   padding: 5px;
-  border-radius: 18px;
+  border-radius: 0px;
 }
 
 .ta-banner {
   height: 300px;
   border-radius: 18px 18px 0 0;
   width: 100%;
+  object-fit: cover;
 }
 
 .ta-user-info {
@@ -56,7 +57,7 @@
 }
 
 .ta-ui-price {
-  font-size: 18px;
+  font-size: var(--body-font);
   font-weight: 600;
 }
 .ta-ui-uname {
@@ -78,7 +79,7 @@
   .ta-banner {
     height: 180px;
     border-radius: 18px;
-    width: 180px;
+    width: 100%;
   }
 }
 

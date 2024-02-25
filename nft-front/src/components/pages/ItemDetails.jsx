@@ -26,8 +26,8 @@ const settings = {
     {
       breakpoint: 1220,
       settings: {
-        centerMode: false,
-        slidesToShow: 4,
+        centerMode: true,
+        slidesToShow: 3,
         slidesToScroll: 2,
         infinite: true,
       },
@@ -65,12 +65,12 @@ const settings = {
 const ItemDetails = () => {
   return (
     <div className="details max-width">
-      <a class="btn-arrow btn-a-body">
+      <Link class="btn-arrow-back btn-a-body">
         <span class="circle" aria-hidden="true">
           <span class="icon arrow"></span>
         </span>
         <span class="button-text">Back</span>
-      </a>
+      </Link>
 
       <div className="detail-container">
         <div className="details-left">
@@ -106,23 +106,56 @@ const ItemDetails = () => {
             </div>
             <div className="drb-fiat">~ $19,990.33</div>
             <div className="drb-btn">
-              <Link className="btn-gradient">
-                <span> Buy NFT</span>
+              <Link class="btn-wave">
+                <span class="wave-text">Buy NFT</span>
+                <div class="wave"></div>
               </Link>
             </div>
           </div>
         </div>
       </div>
-      <div className="details-cards ">
-        <div className="details-c-title">
-          <span className="t-grad-dark">Name</span>
+      <div className="dc-container">
+        <div className="details-cards ">
+          <div className="dct-container">
+            <span className=" details-c-title t-grad-dark">
+              More From sophia_brianna
+            </span>
+          </div>
+          <div className="max-width">
+            <Slider {...settings}>
+              {TopArtData.map((_dets) => (
+                <DetailsCard dets={_dets} />
+              ))}
+            </Slider>
+          </div>
         </div>
-        <div className="max-width">
-          <Slider {...settings}>
-            {TopArtData.map((_dets) => (
-              <DetailsCard dets={_dets} />
-            ))}
-          </Slider>
+      </div>
+
+      <div className="dc-container">
+        <div className="details-cards ">
+          <div className="dct-container">
+            <span className=" details-c-title t-grad-dark">
+              More From This Category
+            </span>
+            <div>
+              <Link class="btn-arrow-fwd btn-a-body">
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+                <span class="button-text hide-large">View All</span>
+
+                <span class="button-text hide-small">See Entire Category</span>
+              </Link>
+            </div>
+          </div>
+
+          <div className="max-width">
+            <Slider {...settings}>
+              {TopArtData.map((_dets) => (
+                <DetailsCard dets={_dets} />
+              ))}
+            </Slider>
+          </div>
         </div>
       </div>
     </div>

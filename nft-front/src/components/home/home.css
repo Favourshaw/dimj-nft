@@ -2,6 +2,11 @@
 
 .hero {
   overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 92vh;
+  gap: 65px;
 }
 
 .hero-bg {
@@ -15,17 +20,17 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding-right: 48px;
+  max-width: 100%;
 }
 
 .hero-left-heading {
-  font-size: 74px;
+  font-size: 72px;
   font-weight: 600;
   line-height: 72px;
 }
 
 .hero-left-desc {
-  font-size: 20px;
+  font-size: var(--body-font);
   margin: 24px 0;
 }
 
@@ -35,41 +40,40 @@
   gap: 36px;
 }
 
-.hero-left-info {
-  display: flex;
-  padding: 48px 0 0;
-  gap: 24px;
-}
-
-.hf-info-item {
-  flex-direction: column;
-}
-
-.hfi-count {
-  font-size: 36px;
-  font-weight: 600;
-}
-
-.hfi-label {
-  font-size: 14px;
-  font-weight: 600;
+.hero-left-btn > div {
+  width: 40%;
 }
 
 .hero-right {
   display: flex;
-  flex: 1;
   position: relative;
+  padding: 50px;
 }
 
 .hero-right-diamond {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-areas:
+    "item1 item2"
+    "item3 item4";
   transform: rotate(45deg);
 }
 
+.item1 {
+  grid-area: item1;
+}
+.item2 {
+  grid-area: item2;
+}
+.item3 {
+  grid-area: item3;
+}
+.item4 {
+  grid-area: item4;
+}
+
 .diamond-item {
-  height: 250px;
-  width: 250px;
+  max-height: 250px;
+  max-width: 250px;
   overflow: hidden;
   margin: 6px;
   transform: rotate(-45deg);
@@ -79,7 +83,7 @@
 }
 
 .hr-image {
-  height: 300px;
+  max-width: 100%;
   object-fit: contain;
   display: block;
 }
@@ -98,20 +102,51 @@
 
 @media screen and (max-width: 1024px) {
   .hero {
-    height: 100vh;
-    display: flex;
     flex-flow: column-reverse;
+    gap: 40px;
+    padding-top: 100px;
   }
   .diamond-item {
-    height: 170px;
-    width: 170px;
     margin: 6px;
-    border-radius: 12px;
-    margin-top: 45px;
+    max-height: 150px;
+    max-width: 150px;
   }
   .hr-image {
     height: 100%;
     width: 100%;
+  }
+
+  .hero-left-heading {
+    font-size: 52px;
+  }
+  .hero-right {
+    padding: 50px 0px;
+  }
+
+  .hero-left-btn {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero {
+    gap: 30px;
+    padding-top: 0px;
+  }
+  .diamond-item {
+    max-height: 200px;
+    max-width: 200px;
+  }
+  .hero-right {
+    padding: 50px 30px;
+  }
+
+  .hero-left-btn > div {
+    width: 100%;
+  }
+
+  .hero-left-btn {
+    flex-wrap: wrap;
   }
 }
 /*top art*/
