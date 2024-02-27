@@ -2,7 +2,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   --background: white;
   --white: white;
-  --dark: #555;
+  --dark: #667085;
   --text-grad-bg: rgb(2, 0, 36);
   --text-grad-1: linear-gradient(
     32deg,
@@ -24,11 +24,11 @@
   --bg-blob: rgba(143, 0, 255, 0.35);
 
   --spacing: 2rem;
-  --body-font: 20px;
+  --body-font: 18px;
   --head-font: 46px;
   --mid-font: 25px;
-  --small-font: 18px;
-  --grey: rgba(145, 145, 143, 0.1);
+  --small-font: 14px;
+  --grey: rgba(145, 145, 200, 0.1);
 }
 
 @media screen and (max-width: 1020px) {

@@ -1,0 +1,84 @@
+.create-form-upload {
+  width: 450px;
+  margin: auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 25px;
+  box-shadow: 7px 20px 20px rgb(210, 227, 244);
+}
+
+.create-form-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+.file-upload {
+  text-align: center;
+  border: 3px dashed rgb(210, 227, 244);
+  padding: 1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+.file-upload p {
+  font-size: 0.87rem;
+  margin-top: 10px;
+  color: #bbcada;
+}
+.file-upload input {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.upload-icon {
+  font-size: var(--head-font);
+}
+.create-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing);
+  width: 100%;
+}
+
+.inputbox {
+  flex-grow: 1;
+  flex-wrap: wrap;
+  font-size: var(--body-font);
+}
+
+.inputbox-half {
+  min-width: 45%;
+}
+
+.inputbox-full {
+  min-width: 100%;
+}
+
+.inputs {
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #e8e8e8;
+  box-shadow: 20px 20px 60px #c5c5c5, -20px -20px 60px #ffffff;
+  transition: 0.3s;
+  width: 100%;
+  font-size: var(--body-font);
+}
+
+.inputs:focus {
+  outline-color: #e8e8e8;
+  background: #e8e8e8;
+  box-shadow: inset 20px 20px 60px #c5c5c5, inset -20px -20px 60px #ffffff;
+  transition: 0.3s;
+}

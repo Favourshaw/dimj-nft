@@ -1,3 +1,71 @@
+.btn {
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.btn-light {
+  padding: 14px 25px;
+  font-weight: 600;
+  border-radius: 1rem;
+  background: var(--white);
+  color: var(--dark);
+
+  font-size: var(--small-font);
+  border: 1px solid #ccc;
+}
+
+.btn-dark {
+  padding: 14px 25px;
+  font-weight: 600;
+  font-size: var(--small-font);
+  border-radius: 1rem;
+  background: var(--btn-bg);
+  color: var(--white);
+}
+
+.btn-sm-light {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--dark);
+  border: 1px solid #ccc;
+}
+
+.btn-sm-dark {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  background: var(--btn-bg);
+  color: var(--white);
+}
+
+.btn-head {
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 1rem;
+  background: var(--white);
+  color: var(--dark);
+  border: 1px solid #ccc;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1020px) {
+  .btn-head > div {
+    display: none;
+  }
+}
+
+/*button arrow */
 .btn-a-body {
   position: relative;
   display: inline-block;
@@ -179,7 +247,7 @@
 
 .btn-wave {
   width: 100%;
-  padding: 20px 40px;
+  padding: 14px 25px;
   position: relative;
   display: block;
   text-decoration: none;

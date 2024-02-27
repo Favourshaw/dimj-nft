@@ -12,26 +12,12 @@
 }
 
 .h-dark {
-  background: #0581b3;
+  background: var(--grey);
 }
 
 .avatar {
   width: 32px;
   height: 32px;
-}
-
-.btn-head {
-  padding: 10px 20px;
-  font-weight: 600;
-  border-radius: 1rem;
-  background: var(--white);
-  color: var(--dark);
-  border: 1px solid #ccc;
-
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
 }
 
 .header-right {

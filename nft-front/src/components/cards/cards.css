@@ -2,12 +2,12 @@
   flex-direction: column;
   width: 100% !important;
 
-  padding: 0 5px;
+  padding: 10px 5px;
 }
 
 .top-art-blob {
   height: 550px;
-  width: 550px;
+  max-width: 550px;
   background: var(--bg-blob);
   filter: blur(160.58px);
   position: absolute;
@@ -16,21 +16,20 @@
 }
 
 .ta-wrapper {
-  background: var(--text-grad-1);
   padding: 2px;
   border-radius: 18px;
   flex: 50%;
   min-width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
 }
 
 .ta-content {
   background-color: var(--white);
-  padding: 5px;
-  border-radius: 0px;
+  border-radius: 18px;
 }
 
 .ta-banner {
-  height: 300px;
+  height: 250px;
   border-radius: 18px 18px 0 0;
   width: 100%;
   object-fit: cover;
@@ -42,7 +41,8 @@
   flex-direction: column;
   width: 100%;
   margin: 16px 0;
-  gap: 15px;
+  gap: 20px;
+  padding: 15px;
 }
 
 .ta-ui-price-logo {
@@ -153,16 +153,16 @@
 }
 
 .cat-ui-price {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: var(--body-font);
+  font-weight: 700;
 }
 .cat-ui-uname {
-  font-size: 15px;
-  font-weight: 600;
+  font-size: var(--body-font);
+  font-weight: 500;
   opacity: 0.7;
 }
 .cat-ui-handle {
-  font-size: 22px;
+  font-size: var(--body-font);
   font-weight: 700;
   padding-bottom: 10px;
 }

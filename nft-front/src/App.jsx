@@ -4,8 +4,10 @@ import Home from "./components/home/Home";
 import HLayout from "./components/layout/Layout";
 import Category from "./components/pages/Category";
 import ItemDetails from "./components/pages/ItemDetails";
-import Dashboard from "./auth/Dashboard";
+import Dashboard from "./auth/dasboard/Dashboard";
 import ALayout from "./components/layout/AuthLayout";
+import UserCollection from "./auth/collection/Collection";
+import Create from "./auth/create/Create";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
 
           <Route element={<ALayout />}>
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/user-collection" element={<UserCollection />} />
+            <Route path="/create" element={<Create />} />
           </Route>
         </Routes>
       </div>

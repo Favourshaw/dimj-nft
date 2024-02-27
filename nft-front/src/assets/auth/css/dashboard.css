@@ -1,0 +1,157 @@
+.dash-trans {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.dash-container {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing);
+  padding: var(--spacing) 0;
+}
+
+.dash-card-container {
+  flex: 65%;
+  gap: var(--spacing);
+  display: flex;
+  flex-direction: column;
+}
+
+.dash-trans {
+  flex: 35%;
+}
+
+.dash-cards {
+  background: var(--grey);
+  border-radius: 1rem;
+  padding: var(--spacing);
+  display: flex;
+  justify-content: space-between;
+}
+
+.dcc-top {
+  align-items: flex-end;
+}
+
+.dash-cards-col {
+  font-size: var(--body-font);
+}
+
+.dash-cards-col > div {
+  font-size: var(--mid-font);
+}
+
+.dash-cards-col > div > span {
+  font-size: var(--head-font);
+}
+
+.dash-cards-row {
+  display: flex;
+  font-size: var(--body-font) !important;
+  font-weight: 600;
+  align-items: center;
+  padding-top: var(--spacing);
+}
+
+.dash-cards-row > div {
+  line-height: 23px;
+}
+
+.dash-cards-row > div > span {
+  font-size: var(--small-font);
+}
+.dcr-text {
+  text-align: right;
+}
+.dash-title {
+  font-size: var(--head-font);
+}
+
+.dash-cards-btn {
+  display: flex;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.hr {
+  width: 70px;
+  height: 7px;
+  border-radius: 1rem;
+  background: var(--dark);
+}
+
+.st-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: var(--spacing);
+  font-size: var(--body-font);
+}
+
+.stc-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: var(--spacing);
+}
+
+.stc-data > div {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.stc-item {
+  font-size: var(--body-font);
+  font-weight: 700;
+}
+
+.stc-item > div {
+  font-size: var(--small-font);
+  font-weight: 400;
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.stc-icon-red {
+  background: rgb(254 202 202);
+  color: rgb(185 28 28);
+  border-radius: 4px;
+  width: 38px;
+  height: 38px;
+  padding: 8px;
+}
+
+.stc-icon-green {
+  background: rgb(187 247 208);
+  color: rgb(21 128 61);
+  border-radius: 4px;
+  width: 38px;
+  height: 38px;
+  padding: 8px;
+}
+
+.stci-stat-pending {
+  width: 15px;
+  color: rgb(253 186 116);
+}
+
+.stci-stat-success {
+  width: 15px;
+  color: rgb(22 163 74);
+}
+
+@media screen and (max-width: 1024px) {
+  .dash-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .dcc-top {
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+  }
+}

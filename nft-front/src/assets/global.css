@@ -1,52 +1,89 @@
-.btn {
-  width: max-content;
-  cursor: pointer;
-  text-transform: uppercase;
-  text-decoration: none;
-  width: 100%;
-  display: block;
-  text-align: center;
-}
-
-.btn-light {
-  padding: 20px 20px;
-  font-weight: 600;
-  border-radius: 1rem;
-  background: var(--white);
-  color: var(--dark);
-  border: 1px solid #ccc;
-}
-
-.btn-dark {
-  padding: 16px 55px;
-  font-weight: 600;
-  border-radius: 60px;
-  background: var(--btn-bg);
-  color: var(--white);
-}
-
-.btn-sm-light {
-  padding: 10px 15px;
-  font-size: 14px;
-  font-weight: 600;
-  border-radius: 8px;
-  background: var(--white);
-  color: var(--dark);
-  border: 2px solid var(--text-grad-bg);
-}
-
-.btn-sm-dark {
-  padding: 10px 15px;
-  font-size: 14px;
-  font-weight: 600;
-  border-radius: 8px;
-  background: var(--btn-bg);
-  color: var(--white);
-}
-
 .t-grad-dark {
   background: var(--text-grad-bg);
   background: var(--text-grad-1);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/*.switch-inputs */
+
+.switch-btn {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 2.5em;
+  height: 0.3em;
+}
+
+.switch-btn .switch-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.btn-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  left: 0;
+  right: 20px;
+  bottom: -10px;
+  background-color: var(--btn-bg);
+  transition: 0.4s;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-slider .circle {
+  background-color: var(--btn-bg);
+  height: 0.5em;
+  width: 0.5em;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  transform: translateX(-50%);
+  transition: 0.4s;
+}
+
+.btn-slider .circle::before {
+  position: absolute;
+  content: "";
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--btn-bg);
+  transition: 0.4s;
+}
+
+.btn-slider .circle::after {
+  content: "";
+  background-color: white;
+  height: 1.1em;
+  width: 1.1em;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.4s;
+}
+
+.switch-input:checked + .btn-slider .circle {
+  transform: translateX(2em);
+  transition: 0.4s;
+}
+
+.switch-input:checked + .btn-slider .circle::before {
+  background-color: var(--btn-bg);
+  transition: 0.4s;
+}
+
+.switch-input:checked + .btn-slider .circle::after {
+  width: 0;
+  height: 0;
+  transition: 0.4s;
 }
