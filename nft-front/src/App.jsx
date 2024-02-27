@@ -8,6 +8,10 @@ import Dashboard from "./auth/dasboard/Dashboard";
 import ALayout from "./components/layout/AuthLayout";
 import UserCollection from "./auth/collection/Collection";
 import Create from "./auth/create/Create";
+import History from "./auth/history/History";
+import Sales from "./auth/sales/Sales";
+import Exhibition from "./auth/exhibition/Exhibition";
+import Auction from "./auth/auction/Auction";
 
 function App() {
   return (
@@ -24,6 +28,10 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/user-collection" element={<UserCollection />} />
             <Route path="/create" element={<Create />} />
+            <Route path="/trans-history" element={<History />} />
+            <Route path="/sales" element={<Sales />} />
+            <Route path="/exhibition" element={<Exhibition />} />
+            <Route path="/auction" element={<Auction />} />
           </Route>
         </Routes>
       </div>

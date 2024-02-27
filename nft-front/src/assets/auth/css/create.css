@@ -67,10 +67,10 @@
 
 .inputs {
   border: none;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 1rem;
-  background: #e8e8e8;
-  box-shadow: 20px 20px 60px #c5c5c5, -20px -20px 60px #ffffff;
+  background: var(--grey);
+  box-shadow: 10px 10px 30px var(--grey), -20px -20px 60px #ffffff;
   transition: 0.3s;
   width: 100%;
   font-size: var(--body-font);

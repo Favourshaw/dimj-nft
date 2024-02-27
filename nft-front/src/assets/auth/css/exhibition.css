@@ -1,0 +1,89 @@
+.ongoin-card {
+  background: var(--grey);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.ongoin-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ongoin-card > div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.ongoin-card > div > div > img {
+  width: 90px;
+  height: 90px;
+  border-radius: 8px;
+}
+
+.ongoin-card > div > div > div {
+  font-size: var(--body-font);
+  font-weight: 600;
+}
+
+.ongoin-card > div > div > span {
+  font-size: var(--small-font);
+}
+
+.oc-name {
+  font-size: var(--small-font) !important;
+}
+
+.ex-bg {
+  background: white !important;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+.host-banner {
+  background: var(--grey);
+  height: 12rem;
+  position: relative;
+  padding: 50px;
+}
+
+.host-banner-avatar {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 150px;
+  border: 5px solid white;
+  border-radius: 12px;
+  background: var(--grey);
+}
+
+.host-banner-avatar > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+}
+
+.host-banner-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  width: 100%;
+  height: 100%;
+  padding: var(--spacing);
+}
+
+.hbc {
+  font-size: var(--head-font);
+}
+
+.host-form {
+  padding-top: 100px;
+}

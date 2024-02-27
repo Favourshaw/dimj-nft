@@ -8,7 +8,13 @@
 }
 
 .dash-width {
-  padding: 0 var(--spacing);
+  padding: 0 96px;
+}
+
+@media only screen and (max-width: 1224px) {
+  .dash-width {
+    padding: 0 var(--spacing);
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -320,7 +326,7 @@
   background: var(--primary);
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1020px) {
   .dash-head {
     display: block;
     color: #101828;
@@ -331,11 +337,62 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .dash-data-container {
     width: auto;
     height: 100px;
     overflow-x: auto;
     overflow-y: hidden;
+  }
+}
+
+/*tabs*/
+.dash-tab-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+.dash-tab-head {
+  display: flex;
+  gap: 10px;
+  background: var(--grey);
+  width: max-content;
+  border-radius: 8px;
+  padding: 10px var(--spacing);
+}
+
+.react-tabs__tab--selected {
+  border-color: transparent !important;
+  border-radius: 5px !important;
+}
+
+.react-tabs__tab {
+  border: 1px solid transparent !important;
+  border-bottom: 1px solid transparent !important;
+  padding: 6px 12px !important;
+  font-size: var(--small-font) !important;
+}
+
+.react-tabs__tab-panel--selected {
+  background: var(--grey);
+  padding: var(--spacing);
+}
+
+@media only screen and (max-width: 1020px) {
+  .react-tabs__tab {
+    padding: 6px 12px !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .dash-tab-head {
+    gap: 1px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 6px 2px;
+  }
+
+  .react-tabs__tab {
+    padding: 6px 8px !important;
   }
 }

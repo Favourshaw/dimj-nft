@@ -155,3 +155,27 @@
     align-items: unset;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .stc-icon-red {
+    width: 24px;
+    height: 24px;
+    padding: 6px;
+  }
+
+  .stc-icon-green {
+    width: 24px;
+    height: 24px;
+    padding: 6px;
+  }
+
+  .stci-stat-pending {
+    width: 15px;
+    color: rgb(253 186 116);
+  }
+
+  .stci-stat-success {
+    width: 15px;
+    color: rgb(22 163 74);
+  }
+}
