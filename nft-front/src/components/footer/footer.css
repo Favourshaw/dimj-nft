@@ -1,0 +1,48 @@
+footer {
+  background: black;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  padding-top: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  gap: var(--spacing-lg);
+  font-size: var(--body-font);
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  flex: 40%;
+}
+
+.footer-left > div > img {
+  width: 200px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 60%;
+}
+
+.footer-right > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-right > div > a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-right > div > div {
+  padding-bottom: var(--spacing);
+  font-weight: 700;
+  font-size: var(--body-font);
+  text-transform: uppercase;
+}

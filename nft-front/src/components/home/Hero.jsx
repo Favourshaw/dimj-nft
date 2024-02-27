@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="hero center-div max-width">
+    <div className="hero center-div max-width hero-bg">
       <div className="hero-left hero-b">
         <div className="hero-left-heading">
           Discover, sell and collect

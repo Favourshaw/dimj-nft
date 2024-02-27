@@ -6,10 +6,12 @@ const AuctionCard = () => {
     <div className="dash-tabs">
       <Tabs className="dash-tab-container">
         <TabList className="dash-tab-head">
-          <Tab>Host Exhibition</Tab>
-          <Tab>Ongoing Exhibition</Tab>
+          <Tab>My Auctions</Tab>
+          <Tab>Ongoing Auctions</Tab>
+          <Tab>My Bids</Tab>
         </TabList>
 
+        <TabPanel className="ex-bg">ss</TabPanel>
         <TabPanel className="ex-bg">ss</TabPanel>
         <TabPanel className="ex-bg">ss</TabPanel>
       </Tabs>

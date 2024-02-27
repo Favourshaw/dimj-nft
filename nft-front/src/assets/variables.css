@@ -24,7 +24,8 @@
   --bg-blob: rgba(143, 0, 255, 0.35);
 
   --spacing: 2rem;
-  --body-font: 18px;
+  --spacing-lg: 4rem;
+  --body-font: 16px;
   --head-font: 46px;
   --mid-font: 25px;
   --small-font: 14px;
@@ -34,10 +35,10 @@
 @media screen and (max-width: 1020px) {
   :root {
     --spacing: 1.6rem;
-    --body-font: 16px;
+    --body-font: 14px;
     --head-font: 36px;
-    --mid-font: 22px;
-    --small-font: 14px;
+    --mid-font: 20px;
+    --small-font: 12px;
   }
 }
 

@@ -1,3 +1,8 @@
+.head {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
 .header {
   display: flex;
   flex-direction: row;
@@ -5,14 +10,15 @@
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  position: sticky;
+  position: absolute;
   top: 0;
   z-index: 99;
+  width: 100%;
   background-color: white;
 }
 
 .h-dark {
-  background: var(--grey);
+  background: transparent;
 }
 
 .avatar {
