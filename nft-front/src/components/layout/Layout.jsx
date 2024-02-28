@@ -5,11 +5,11 @@ import Footer from "../footer/Footer";
 
 const HLayout = () => {
   return (
-    <>
+    <div className="main">
       <Header />
       <Outlet />
       <Footer />
-    </>
+    </div>
   );
 };
 

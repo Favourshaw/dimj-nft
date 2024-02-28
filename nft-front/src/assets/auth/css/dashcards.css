@@ -1,26 +1,33 @@
 .dcat-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 5px;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0px;
+  flex-grow: 1;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
 }
 
 .dcat-card {
-  padding: 4px 8px;
+  flex-basis: 33.33%;
+  padding: 10px;
 }
-
+.collection-card {
+  flex-basis: 25%;
+  padding: 10px;
+}
 .dcat-wrapper {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-  padding: 2px;
+  padding: 0px;
   margin-top: 8px;
   vertical-align: middle;
-  max-width: 100%;
+  min-width: 100%;
   border-radius: 18px;
 }
 
 .dcat-b-container {
-  min-width: 300px;
-  min-height: 250px;
   position: relative;
 }
 
@@ -42,16 +49,15 @@
   -webkit-backdrop-filter: blur(20px);
   border-radius: 15px;
   color: white;
-  padding: 5px 15px;
+  padding: 5px;
   font-size: var(--small-font);
   font-weight: 500;
 }
 
 .dcat-banner {
-  height: 250px;
+  aspect-ratio: 5/4;
   border-radius: 18px 18px 0 0;
-  max-width: 300px;
-  min-width: 300px;
+  width: 100%;
   object-fit: fill;
 }
 
@@ -77,4 +83,29 @@
 }
 .cat-ui-p-icon {
   color: var(--btn-bg);
+}
+@media screen and (max-width: 1224px) {
+  .dcat-card {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .collection-card {
+    flex-basis: 33.33%;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .collection-card {
+    flex-basis: 50%;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dcat-card {
+    flex-basis: 100%;
+  }
 }

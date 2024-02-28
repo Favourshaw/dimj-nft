@@ -8,7 +8,7 @@
 
 .btn-light {
   padding: 14px 25px;
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 1rem;
   background: var(--white);
   color: var(--dark);
@@ -19,7 +19,7 @@
 
 .btn-dark {
   padding: 14px 25px;
-  font-weight: 600;
+  font-weight: 400;
   font-size: var(--small-font);
   border-radius: 1rem;
   background: var(--btn-bg);
@@ -46,9 +46,9 @@
 }
 
 .btn-head {
-  padding: 10px 20px;
-  font-weight: 600;
-  border-radius: 1rem;
+  padding: 5px 20px;
+  font-weight: 400;
+  border-radius: 6px;
   background: var(--white);
   color: var(--dark);
   border: 1px solid #ccc;

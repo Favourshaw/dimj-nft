@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import Nav from "../header/Nav";
+
 const Hero = () => {
   return (
     <div className="hero center-div max-width hero-bg">
+      <Nav />
       <div className="hero-left hero-b">
         <div className="hero-left-heading">
           Discover, sell and collect

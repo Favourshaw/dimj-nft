@@ -7,7 +7,6 @@ import Nav from "../header/Nav";
 const Home = () => {
   return (
     <>
-      <Nav />
       <Hero />
       <TopArt />
     </>

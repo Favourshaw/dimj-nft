@@ -2,7 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import { RxLightningBolt } from "react-icons/rx";
-import { FiBell } from "react-icons/fi";
+import { FiBell, FiUser } from "react-icons/fi";
 import { IconContext } from "react-icons";
 import { SidebarData } from "../../utils/sidebarData";
 import { TfiClose } from "react-icons/tfi";
@@ -12,16 +12,11 @@ const AuthHeader = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   return (
     <header>
-      <div className="topmenu">
+      <div className="topmenu dash-width">
         <div className="topmenu-text">&nbsp;</div>
         <div className="topmenu-right">
           <Link className="btn  btn-head" to="/">
-            <RxLightningBolt /> Upgrade now
-          </Link>
-          <Link className="notification" to="/notification">
-            <IconContext.Provider value={{ className: "top-bell" }}>
-              <FiBell />
-            </IconContext.Provider>
+            <FiUser /> Palmwinepapi
           </Link>
         </div>
       </div>

@@ -9,7 +9,7 @@ import "../../assets/auth/css/dashcards.css";
 const CollectionCard = (props) => {
   const { gaming } = props;
   return (
-    <div className="dcat-card center-div ">
+    <div className="collection-card center-div ">
       <div className="dcat-wrapper">
         <div className="">
           <div className="dcat-b-container">

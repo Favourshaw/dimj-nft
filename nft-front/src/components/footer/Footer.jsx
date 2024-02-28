@@ -17,24 +17,20 @@ const Footer = () => {
             Join our mailing list to stay in the loop with our newest feature
             releases, NFT drops, and tips and tricks for navigating Axiom.
           </div>
-          <div className="create-form-container">
-            <div className="create-form">
-              <div className="inputbox inputbox-full">
-                <input
-                  required="required"
-                  className="inputs"
-                  type="text"
-                  name="text"
-                  class="inputs"
-                  placeholder="Type here..."
-                />
-              </div>
 
-              <div className="inputbox">
-                <div>
-                  <Link class="btn btn-sm-light">Submit</Link>
-                </div>
-              </div>
+          <div className="inputbox inputbox-full">
+            <input
+              required="required"
+              className="footer-input"
+              type="text"
+              name="text"
+              placeholder="Type here..."
+            />
+          </div>
+
+          <div className="inputbox footer-btn">
+            <div>
+              <Link class="btn btn-sm-dark">Submit</Link>
             </div>
           </div>
         </div>

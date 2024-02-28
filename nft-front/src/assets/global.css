@@ -8,7 +8,7 @@
 /*.switch-inputs */
 
 .switch-btn {
-  font-size: 17px;
+  font-size: 10px;
   position: relative;
   display: inline-block;
   width: 2.5em;
@@ -24,10 +24,10 @@
 .btn-slider {
   position: absolute;
   cursor: pointer;
-  top: 10px;
+  top: 1px;
   left: 0;
   right: 20px;
-  bottom: -10px;
+  bottom: -1px;
   background-color: var(--btn-bg);
   transition: 0.4s;
   border-radius: 30px;

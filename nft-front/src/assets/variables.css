@@ -26,7 +26,7 @@
   --spacing: 2rem;
   --spacing-lg: 4rem;
   --body-font: 16px;
-  --head-font: 46px;
+  --head-font: 30px;
   --mid-font: 25px;
   --small-font: 14px;
   --grey: rgba(145, 145, 200, 0.1);
@@ -36,7 +36,7 @@
   :root {
     --spacing: 1.6rem;
     --body-font: 14px;
-    --head-font: 36px;
+    --head-font: 30px;
     --mid-font: 20px;
     --small-font: 12px;
   }
@@ -46,7 +46,7 @@
   :root {
     --spacing: 1rem;
     --body-font: 14px;
-    --head-font: 28px;
+    --head-font: 24px;
     --mid-font: 16px;
     --small-font: 12px;
   }

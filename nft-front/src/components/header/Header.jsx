@@ -31,12 +31,12 @@ const Header = () => {
           </div>
           <div className="header-right">
             <div className="btn btn-head">
-              <div className="btn-avatar">
+              <span className="btn-avatar">
                 <FiSearch className="avatar" />
-              </div>
+              </span>
             </div>
             <div>
-              <Link class="btn  btn-head">
+              <Link to="/dashboard" class="btn  btn-head">
                 <span class="btn-avatar">
                   <img src={Avatar} className="avatar" />
                 </span>

@@ -20,9 +20,9 @@ const Dashboard = () => {
               </div>
             </div>
             <div className="dash-cards-btn">
-              <Link className="btn btn-dark">Deposit</Link>
-              <Link className="btn btn-light">Mint</Link>
-              <Link className="btn btn-light">Withdraw</Link>
+              <Link className="btn btn-sm-dark">Deposit</Link>
+              <Link className="btn btn-sm-light">Mint</Link>
+              <Link className="btn btn-sm-light">Withdraw</Link>
             </div>
           </div>
           <div className="dash-cards">

@@ -12,9 +12,9 @@ const DashNft = () => {
     query: "(max-width: 1220px) (min-width: 1020px)",
   });
   const isMedium = useMediaQuery({
-    query: " (min-width: 750px)",
+    query: " (min-width: 600px)",
   });
-  const isSmall = useMediaQuery({ query: "(min-width: 740px) " });
+  const isSmall = useMediaQuery({ query: "(min-width: 600px) " });
 
   return (
     <>
