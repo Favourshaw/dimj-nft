@@ -4,16 +4,16 @@ import { TopArtData } from "../../utils/topArts";
 import TopArtCard from "../cards/TopArtCard";
 import { Link } from "react-router-dom";
 
-const settings = {
+const settings2 = {
   className: "center",
   centerMode: true,
   infinite: true,
   centerPadding: "60px",
-  speed: 2000,
+  speed: 5000,
   slidesToShow: 5,
   slidesToScroll: 3,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 5000,
   cssEase: "linear",
   arrows: false,
   dots: false,
@@ -82,7 +82,7 @@ const TopArt = () => {
       </div>
       <div className="top-art-blob"></div>
 
-      <Slider {...settings}>
+      <Slider {...settings2}>
         {TopArtData.map((_topArt) => (
           <TopArtCard topArt={_topArt} />
         ))}
