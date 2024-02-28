@@ -3,6 +3,7 @@ import "./category.css";
 import CatCard from "../cards/CatCard";
 import { TopArtData } from "../../utils/topArts";
 import Nav from "../header/Nav";
+import PagBtn from "../cards/PagBtn";
 
 const Category = () => {
   return (
@@ -69,6 +70,9 @@ const Category = () => {
         {TopArtData.map((_topArt) => (
           <CatCard gaming={_topArt} />
         ))}
+      </div>
+      <div className="max-width">
+        <PagBtn />
       </div>
     </>
   );
