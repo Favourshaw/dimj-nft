@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CatCard = (props) => {
   const { gaming } = props;
   return (
     <div className="cat-card center-div ">
-      <div className="cat-content">
+      <Link to="/details" className="cat-content">
         <img
           src={gaming.banner}
           alt={gaming.user_name}
@@ -25,7 +26,7 @@ const CatCard = (props) => {
             <div className="cat-ui-price">{gaming.floor}</div>
           </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };

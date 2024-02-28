@@ -70,7 +70,7 @@ const TopArt = () => {
           <span className="t-grad-dark">Top Artist</span>
         </div>
         <div>
-          <Link class="btn-arrow-fwd btn-a-body">
+          <Link to="/Category" class="btn-arrow-fwd btn-a-body">
             <span class="circle" aria-hidden="true">
               <span class="icon arrow"></span>
             </span>

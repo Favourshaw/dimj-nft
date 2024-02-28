@@ -9,7 +9,8 @@ const Hero = () => {
       <Nav />
       <div className="hero-left hero-b">
         <div className="hero-left-heading">
-          Discover, sell and collect
+          Discover, sell
+          <br /> and collect
           <span className="t-grad-dark"> Extraordinary </span> NFT
         </div>
         <div className="hero-left-desc">
