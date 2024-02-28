@@ -31,6 +31,13 @@
 }
 
 /* topmenu start */
+
+.top {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: white;
+}
 .topmenu {
   display: flex;
   flex-direction: row;

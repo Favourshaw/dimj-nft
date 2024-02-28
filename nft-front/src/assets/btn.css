@@ -61,7 +61,7 @@
 }
 
 .pag-btn {
-  padding: var(--spacing) 0;
+  padding: var(--spacing-lg) 0;
   display: block;
   display: flex;
   justify-content: flex-end;

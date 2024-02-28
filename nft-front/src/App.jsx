@@ -12,6 +12,7 @@ import History from "./auth/history/History";
 import Sales from "./auth/sales/Sales";
 import Exhibition from "./auth/exhibition/Exhibition";
 import Auction from "./auth/auction/Auction";
+import Marketplace from "./components/pages/Marketplace";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/category" element={<Category />} />
             <Route path="/details" element={<ItemDetails />} />
+            <Route path="/market" element={<Marketplace />} />
           </Route>
 
           <Route element={<ALayout />}>
@@ -31,6 +33,7 @@ function App() {
             <Route path="/trans-history" element={<History />} />
             <Route path="/sales" element={<Sales />} />
             <Route path="/exhibition" element={<Exhibition />} />
+            <Route path="/auction" element={<Auction />} />
             <Route path="/auction" element={<Auction />} />
           </Route>
         </Routes>

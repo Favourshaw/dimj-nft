@@ -11,7 +11,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const AuthHeader = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   return (
-    <header>
+    <header className="top">
       <div className="topmenu dash-width">
         <div className="topmenu-text">&nbsp;</div>
         <div className="topmenu-right">
