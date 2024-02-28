@@ -86,3 +86,28 @@ footer {
     flex-wrap: wrap;
   }
 }
+
+/* auth footer */
+
+.auth-footer {
+  background: black;
+  color: white;
+  font-weight: 600;
+  font-size: var(--body-font);
+  padding-top: var(--spacing);
+  padding-bottom: var(--spacing);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.auth-footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth-footer-container > div {
+  display: flex;
+  gap: var(--spacing);
+}
