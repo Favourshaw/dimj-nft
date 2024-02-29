@@ -1,5 +1,7 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import MyAuction from "./MyAuction";
+import OngoinAuc from "./OngoinAuc";
 
 const AuctionCard = () => {
   return (
@@ -11,8 +13,12 @@ const AuctionCard = () => {
           <Tab>My Bids</Tab>
         </TabList>
 
-        <TabPanel className="ex-bg">ss</TabPanel>
-        <TabPanel className="ex-bg">ss</TabPanel>
+        <TabPanel className="ex-bg">
+          <MyAuction />
+        </TabPanel>
+        <TabPanel className="ex-bg">
+          <OngoinAuc />
+        </TabPanel>
         <TabPanel className="ex-bg">ss</TabPanel>
       </Tabs>
     </div>

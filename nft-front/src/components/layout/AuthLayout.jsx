@@ -17,7 +17,9 @@ const ALayout = () => {
 
       <div className={`dashboard ${navClose ? "dashboard-close" : ""}`}>
         <AuthHeader />
-        <Outlet />
+        <div className="dash-height">
+          <Outlet />
+        </div>
         <AuthFooter />
       </div>
     </>

@@ -2,6 +2,7 @@ import React from "react";
 import SideTransCard from "../../components/cards/SideTransCard";
 import SideSalesCard from "../../components/cards/SideSalesCard";
 import AuctionCard from "./AuctionCard";
+import "../../assets/auth/css/auction.css";
 
 const Auction = () => {
   return (

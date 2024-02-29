@@ -3,6 +3,10 @@
   transition: margin-left 0.4s ease-in;
 }
 
+.dash-height {
+  min-height: 85vh;
+}
+
 .dashboard-close {
   margin-left: 80px;
 }
@@ -406,4 +410,14 @@
   .react-tabs__tab {
     padding: 6px 8px !important;
   }
+}
+
+/* empty */
+.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing);
+  margin-top: 80px;
 }
