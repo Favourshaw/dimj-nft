@@ -2,6 +2,7 @@ import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import MyAuction from "./MyAuction";
 import OngoinAuc from "./OngoinAuc";
+import MyBids from "./MyBids";
 
 const AuctionCard = () => {
   return (
@@ -19,7 +20,9 @@ const AuctionCard = () => {
         <TabPanel className="ex-bg">
           <OngoinAuc />
         </TabPanel>
-        <TabPanel className="ex-bg">ss</TabPanel>
+        <TabPanel className="ex-bg">
+          <MyBids />
+        </TabPanel>
       </Tabs>
     </div>
   );
