@@ -1,27 +1,14 @@
 import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
-import AuthHeader from "../header/AuthHeader";
-import AuthFooter from "../footer/AuthFooter";
-import AuthSidebar from "../header/AuthSidebar";
 import "../../assets/auth/css/dash.css";
+import AuthHead from "../../auth/authentication/AuthHead";
 
 const ALayout = () => {
-  const [navClose, setNavClose] = useState(false);
   return (
     <>
-      <AuthSidebar
-        onCollapse={(navClose) => {
-          setNavClose(navClose);
-        }}
-      />
+      <AuthHead />
 
-      <div className={`dashboard ${navClose ? "dashboard-close" : ""}`}>
-        <AuthHeader />
-        <div className="dash-height">
-          <Outlet />
-        </div>
-        <AuthFooter />
-      </div>
+      <Outlet />
     </>
   );
 };

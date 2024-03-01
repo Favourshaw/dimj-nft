@@ -5,7 +5,6 @@ import Avatar from "../../assets/img/avatar.svg";
 import { FiSearch } from "react-icons/fi";
 
 import { Link } from "react-router-dom";
-import Nav from "./Nav";
 
 const Header = () => {
   const [color, setColor] = useState(false);

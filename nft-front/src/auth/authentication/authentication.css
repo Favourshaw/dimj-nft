@@ -1,0 +1,44 @@
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  height: 100vh;
+  margin: auto;
+}
+
+.auth > div {
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid var(--grey);
+  padding: var(--spacing);
+}
+.auth-head {
+  font-size: var(--head-font);
+}
+
+.auth-head > span {
+  font-size: var(--body-font);
+}
+
+.auth-form {
+  width: 100%;
+  text-align: left;
+}
+.inputbox > div {
+  text-align: right;
+  width: 100%;
+  padding-top: var(--spacing);
+}
+
+.auth-bottom {
+  text-align: center;
+  padding-top: var(--spacing);
+}
+
+.auth-bottom a,
+.inputbox > div a,
+.create-form > span > label > a {
+  text-decoration: none;
+  color: var(--btn-bg);
+}
