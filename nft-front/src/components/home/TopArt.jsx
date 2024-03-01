@@ -3,22 +3,24 @@ import Slider from "react-slick/lib/slider";
 import { TopArtData } from "../../utils/topArts";
 import TopArtCard from "../cards/TopArtCard";
 import { Link } from "react-router-dom";
+import SampleNextArrow, { SamplePrevArrow } from "../Arrows";
 
 const settings2 = {
   className: "center",
   centerMode: true,
   infinite: true,
   centerPadding: "60px",
-  speed: 5000,
+  speed: 200,
   slidesToShow: 5,
   slidesToScroll: 3,
   autoplay: true,
   autoplaySpeed: 5000,
   cssEase: "linear",
-  arrows: false,
   dots: false,
   initialSlide: 0,
   pauseOnHover: true,
+  nextArrow: <SampleNextArrow />,
+  prevArrow: <SamplePrevArrow />,
   responsive: [
     {
       breakpoint: 1224,
@@ -34,6 +36,8 @@ const settings2 = {
         slidesToShow: 3,
         slidesToScroll: 2,
         infinite: true,
+        nextArrow: false,
+        prevArrow: false,
       },
     },
 
@@ -43,6 +47,8 @@ const settings2 = {
         slidesToShow: 2,
         slidesToScroll: 2,
         infinite: true,
+        nextArrow: false,
+        prevArrow: false,
       },
     },
     {
@@ -50,6 +56,8 @@ const settings2 = {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        nextArrow: false,
+        prevArrow: false,
       },
     },
     {
@@ -57,6 +65,8 @@ const settings2 = {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        nextArrow: false,
+        prevArrow: false,
       },
     },
   ],

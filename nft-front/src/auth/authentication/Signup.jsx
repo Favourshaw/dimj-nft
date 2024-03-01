@@ -69,7 +69,7 @@ const Signup = () => {
               </div>
               <span>
                 <label htmlFor="agree">
-                  <input type="checkbox" /> I agree to{" "}
+                  <input type="checkbox" /> I agree to
                   <Link to="/terms">terms</Link> and
                   <Link to="policy"> Policy.</Link>
                 </label>

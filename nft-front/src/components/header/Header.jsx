@@ -35,7 +35,7 @@ const Header = () => {
               </span>
             </div>
             <div>
-              <Link to="/dashboard" class="btn  btn-head">
+              <Link to="/login" class="btn  btn-head">
                 <span class="btn-avatar">
                   <img src={Avatar} className="avatar" />
                 </span>

@@ -44,8 +44,8 @@ const Login = () => {
               </div>
               <div className="inputbox inputbox-full">
                 <div>
-                  <Link class="btn-wave">
-                    <span class="wave-text">Create</span>
+                  <Link class="btn-wave" to="/dashboard">
+                    <span class="wave-text">Login</span>
                     <div class="wave"></div>
                   </Link>
                 </div>
