@@ -4,7 +4,7 @@ import Empty from "../Empty";
 const MyBids = () => {
   return (
     <div>
-      <Empty />{" "}
+      <Empty />
     </div>
   );
 };

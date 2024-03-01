@@ -4,7 +4,6 @@ import Empty from "../Empty";
 const MyAuction = () => {
   return (
     <div>
-      {" "}
       <Empty />
     </div>
   );
